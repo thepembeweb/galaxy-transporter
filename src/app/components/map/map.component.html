@@ -1,0 +1,40 @@
+<div>
+  <div class="header">
+    <div class="selector">
+      <div class="select-style">
+        <label for="planet">From Planet: </label>
+        <select
+          #fromPlanetDropdown
+          (change)="onPlanetChanged()"
+          class="form-control1"
+          id="planet"
+          name="planet"
+        >
+          <option *ngFor="let planet of planets" [value]="planet.planetNode">
+            {{ planet.planetName }} ({{ planet.planetNode }})
+          </option>
+        </select>
+      </div>
+      <br>
+      <div class="select-style">
+        <label for="planet">To Planet: </label>
+        <select
+          #toPlanetDropdown
+          (change)="onPlanetChanged()"
+          class="form-control1"
+          id="planet"
+          name="planet"
+        >
+          <option *ngFor="let planet of planets" [value]="planet.planetNode">
+            {{ planet.planetName }} ({{ planet.planetNode }})
+          </option>
+        </select>
+      </div>
+    </div>
+    <div class="path-container">
+      <span class="path"></span>
+    </div>
+  </div>
+
+  <svg></svg>
+</div>

@@ -1,0 +1,23 @@
+<h1>{{ title }}</h1>
+
+<div class="wrapper">
+    <div class="item-container" *ngIf="planets">
+      <div class="cards" *ngFor="let planet of planets">
+        <div class="card-item">
+          <div
+            class="card-image"
+            [style.backgroundImage]="'url(' + planetImage + ')'"
+          ></div>
+          <div class="card-info">
+            <p class="card-intro">
+              <strong>Planet Name:</strong> {{ planet.planetName }}
+            </p>
+            <p class="card-intro">
+              <strong>Planet Node:</strong> {{ planet.planetNode }}
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  

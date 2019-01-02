@@ -1,0 +1,29 @@
+<h1>{{ title }}</h1>
+
+<div class="wrapper">
+    <div class="item-container" *ngIf="traffic">
+      <div class="cards" *ngFor="let trafficItem of traffic">
+        <div class="card-item">
+          <div
+            class="card-image"
+            [style.backgroundImage]="'url(' + trafficImage + ')'"
+          ></div>
+          <div class="card-info">
+            <p class="card-intro">
+              <strong>Route Id:</strong> {{ trafficItem.routeId }}
+            </p>
+            <p class="card-intro">
+              <strong>Planet Origin:</strong> {{ trafficItem.planetOrigin }}
+            </p>
+            <p class="card-intro">
+              <strong>Planet Destination:</strong> {{ trafficItem.planetDestination }}
+            </p>
+            <p class="card-intro">
+              <strong>Traffic Delay:</strong> {{ trafficItem.trafficDelay }}
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  

@@ -1,0 +1,20 @@
+<h1>{{ title }}</h1>
+
+<ul *ngIf="!showLoading">
+  <li *ngIf="!isDatabasePopulated" (click)="populateDatabase()">
+    <img [src]="settingsImage" [alt]="populateDatabaseLabel" />
+    <p>{{ populateDatabaseLabel }}</p>
+  </li>
+</ul>
+
+<div *ngIf="isDatabasePopulated && !showLoading">
+  <app-map [routes]="routes" [planets]="planets"> </app-map>
+</div>
+
+<div *ngIf="showLoading" class="loader">
+  <div class="loader-bouncer">
+    <div class="loader-bouncer__item"></div>
+    <div class="loader-bouncer__item"></div>
+    <div class="loader-bouncer__item"></div>
+  </div>
+</div>

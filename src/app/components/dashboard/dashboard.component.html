@@ -1,0 +1,21 @@
+<h1>{{ title }}</h1>
+<ul>
+  <li>
+    <a routerLink="/planets">
+      <img [src]="planetsImage" alt="[planetsLabel]" />
+      <p>{{ planetsLabel }}</p>
+    </a>
+  </li>
+  <li>
+    <a routerLink="/routes">
+      <img [src]="routesImage" alt="[routesLabel]" />
+      <p>{{ routesLabel }}</p>
+    </a>
+  </li>
+  <li>
+    <a routerLink="/traffic">
+      <img [src]="trafficImage" [alt]="trafficLabel" />
+      <p>{{ trafficLabel }}</p>
+    </a>
+  </li>
+</ul>

@@ -1,0 +1,28 @@
+<h1>{{ title }}</h1>
+
+<div class="wrapper">
+  <div class="item-container" *ngIf="routes">
+    <div class="cards" *ngFor="let route of routes">
+      <div class="card-item">
+        <div
+          class="card-image"
+          [style.backgroundImage]="'url(' + routeImage + ')'"
+        ></div>
+        <div class="card-info">
+          <p class="card-intro">
+            <strong>Route Id:</strong> {{ route.routeId }}
+          </p>
+          <p class="card-intro">
+            <strong>Planet Origin:</strong> {{ route.planetOrigin }}
+          </p>
+          <p class="card-intro">
+            <strong>Planet Destination:</strong> {{ route.planetDestination }}
+          </p>
+          <p class="card-intro">
+            <strong>Distance:</strong> {{ route.distance }}
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
