@@ -1,27 +1,34 @@
-# GalaxyTransporter
+# Galaxy Transporter
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.1.4.
+> "Galaxy Transporter" is an Angular web app that lets a user find the shortest path between two planets using Dijkstra's algorithm.
 
-## Development server
+![](https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Angular_full_color_logo.svg/200px-Angular_full_color_logo.svg.png) ![](https://d3js.org/logo.svg)
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+![GitHub](https://img.shields.io/github/license/mashape/apistatus.svg)
 
-## Code scaffolding
+The app will allow users to select a source and destination planet, and then get the shortest path between the two planets.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Installation
 
-## Build
+### Requirements
+The project uses Node.js and Angular CLI. 
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+If you do not have Node >= 6.x installed, you can download it here: [Node.js](https://nodejs.org/en/)
 
-## Running unit tests
+### Setup
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+* Clone the repo `git clone https://github.com/thepembeweb/galaxy-transporter.git`
+* Install project dependencies with `npm install`
+* Start the development server with `ng serve`
 
-## Running end-to-end tests
+Alternatively you can try the [app demo here](http://pemzy.co.za/index.html).
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+## Built With
 
-## Further help
+* [Angular CLI](https://cli.angular.io/) - The command line interface used to power the app. 
+* [D3.js](https://d3js.org/) - The JavaScript library used for visualizing data using web standards.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## License
+
+MIT  © [Pemberai Sweto](https://github.com/thepembeweb)
+
