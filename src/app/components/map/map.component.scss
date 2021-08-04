@@ -1,0 +1,126 @@
+.links line {
+  stroke: #999;
+  stroke-opacity: 0.6;
+}
+
+.nodes circle {
+  stroke: #fff;
+  stroke-width: 1.5px;
+  cursor: pointer;
+}
+
+.node {
+  fill: #3e4552;
+  stroke: #3e4552;
+}
+
+.label {
+  fill: #ffffff;
+  stroke: #ffffff;
+}
+
+.link {
+  stroke: #000000;
+}
+
+.bold {
+  stroke: #ff0000;
+  stroke-width: 4;
+}
+
+h1 {
+  text-align: center;
+}
+div {
+  margin: 0;
+  padding: 0;
+
+  svg {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 0 auto;
+    // background: rgba(0, 0, 0, .3);
+  }
+}
+
+.header {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.selector{
+  margin: 0 auto;
+}
+
+.path-container{
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 1.3em;
+  letter-spacing: 0.3em;
+  padding: 1em;
+}
+
+.content {
+  width: 100%;
+}
+
+.svg-container {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  padding-bottom: 100%;
+  vertical-align: top;
+  overflow: hidden;
+}
+.svg-content {
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.select-style {
+  padding: 0;
+  margin: 0;
+  border: 1px solid #ccc;
+  width: 100%;
+  border-radius: 3px;
+  overflow: hidden;
+  background-color: #ffffff;
+}
+
+.select-style label {
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  padding: 0 10px;
+}
+
+.select-style select {
+  padding: 5px 8px;
+  width: 100%;
+  font-size: 1.5em;
+  letter-spacing: .03em;
+  border: none;
+  box-shadow: none;
+  background-color: transparent;
+  background-image: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+}
+
+.select-style select:focus {
+  outline: none;
+}
+
+.select-style select:-moz-focusring {
+  color: transparent;
+  text-shadow: 0 0 0 #000;
+}
